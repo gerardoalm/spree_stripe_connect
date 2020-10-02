@@ -1,4 +1,4 @@
-class CreateSpreeStripeAccounts < ActiveRecord::Migration
+class CreateSpreeStripeAccounts < ActiveRecord::Migration[5.0]
   def change
     create_table :spree_stripe_accounts do |t|
       t.string :access_token
